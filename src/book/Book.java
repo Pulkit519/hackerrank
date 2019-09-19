@@ -26,5 +26,13 @@ public class Book {
     public void setIsbn(String isbn) {
         this.isbn = isbn;
     }
+    @Override
+    public String toString(){
+        return "------------------------------\n"+
+                "Book Name:\t"+getBname()+"\n"+
+                "Author Name:\t"+getBaname()+"\n"+
+                "ISBN:\t"+getIsbn()+"\n"+
+                "------------------------------\n";
+    }
 
 }
