@@ -5,12 +5,14 @@ public class Book {
     private String isbn;
     private String baname;
 
-    public String getBname(){
+    public String getBname() {
         return bname;
     }
-    public String getBaname(){
+
+    public String getBaname() {
         return baname;
     }
+
     public String getIsbn() {
         return isbn;
     }
@@ -26,13 +28,19 @@ public class Book {
     public void setIsbn(String isbn) {
         this.isbn = isbn;
     }
+
     @Override
-    public String toString(){
-        return "------------------------------\n"+
-                "Book Name:\t"+getBname()+"\n"+
-                "Author Name:\t"+getBaname()+"\n"+
-                "ISBN:\t"+getIsbn()+"\n"+
+    public String toString() {
+        return "------------------------------\n" +
+                "Book Name:\t" + getBname() + "\n" +
+                "Author Name:\t" + getBaname() + "\n" +
+                "ISBN:\t" + getIsbn() + "\n" +
                 "------------------------------\n";
     }
 
+    public Book(String bname, String baname, String isbn) {
+        this.bname = bname;
+        this.baname = baname;
+        this.isbn = isbn;
+    }
 }
